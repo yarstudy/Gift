@@ -8,17 +8,17 @@ namespace Gift
 {
 
 
-    public class ChewyCandy : AbstractCandy, ICandyFilling
+    public class ChewyCandy : AbstractCandy, ICandyStuffing
     {
-        public string candyFilling;
-        public string CandyFilling { get; set; }
+        public string candyStuffing;
+        public string CandyStuffing { get; set; }
 
-        public ChewyCandy(string candyName, int candyWeight, int candySugar, string candyFilling)
+        public ChewyCandy(string candyName, int candyWeight, int candySugar, string candyStuffing)
             : base(candyName, candyWeight, candySugar)
         {
-            CandyFilling = candyFilling;
+            CandyStuffing = candyStuffing;
         }
-        public void GetFilling() { }
+        public void GetStuffing() { Console.WriteLine("This chewy candy contains the stuffing {0}", candyStuffing); }
 
     }
 }

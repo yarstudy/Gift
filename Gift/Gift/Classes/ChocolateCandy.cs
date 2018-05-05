@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace Gift
 {
-    public class ChocolateCandy : AbstractCandy, ICandyFilling
+    public class ChocolateCandy : AbstractCandy, ICandyStuffing
     {
-        public string candyFilling;
-        public string CandyFilling { get; set; }
-        public ChocolateCandy(string chocoName, int chocoWeight, int chocoSugar, string candyFilling) 
+        public string candyStuffing;
+        public string CandyStuffing { get; set; }
+        public ChocolateCandy(string chocoName, int chocoWeight, int chocoSugar, string candyStuffing) 
             : base(chocoName, chocoWeight, chocoSugar)
         {
-            CandyFilling = candyFilling;
+            CandyStuffing = candyStuffing;
         }
-        public void GetFilling() { }
+        public void GetStuffing() { Console.WriteLine("This chocolate candy contains the stuffing {0}", candyStuffing); }
     }
 }
