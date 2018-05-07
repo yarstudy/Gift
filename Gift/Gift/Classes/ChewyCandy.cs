@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Gift
 {
-
-
     public class ChewyCandy : AbstractCandy, ICandyFilling
     {
         public string candyFilling;
@@ -18,7 +17,12 @@ namespace Gift
         {
             CandyFilling = candyFilling;
         }
-        public void GetFilling() { }
+        public void GetFilling()
+        {
+            Console.WriteLine("Chocolate candy {0} contains filling {1}", CandyName, CandyFilling);
+        }
 
     }
+
 }
+

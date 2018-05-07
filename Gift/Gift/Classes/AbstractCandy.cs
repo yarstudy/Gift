@@ -9,14 +9,14 @@ namespace Gift
 {
     public abstract class AbstractCandy
     {
-        public string Name { get; private set; }
-        public int Weight { get; private set; }
-        public int Sugar { get; private set; }
+        public string CandyName { get; private set; }
+        public int CandyWeight { get; private set; }
+        public int CandySugar { get; private set; }
         public AbstractCandy(string candyName, int candyWeight, int candySugar)
         {
-            Name = candyName;
-            Weight = candyWeight;
-            Sugar = candySugar;
+            CandyName = candyName;
+            CandyWeight = candyWeight;
+            CandySugar = candySugar;
         }
     }
 }

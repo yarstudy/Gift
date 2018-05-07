@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Gift
 {
-    public class Gift 
+    public class Gift
     {
- 
+
     }
 }

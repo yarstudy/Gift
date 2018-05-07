@@ -10,11 +10,14 @@ namespace Gift
     {
         public string candyFilling;
         public string CandyFilling { get; set; }
-        public ChocolateCandy(string chocoName, int chocoWeight, int chocoSugar, string candyFilling) 
-            : base(chocoName, chocoWeight, chocoSugar)
+        public ChocolateCandy(string candyName, int candyWeight, int candySugar, string candyFilling)
+            : base(candyName, candyWeight, candySugar)
         {
             CandyFilling = candyFilling;
         }
-        public void GetFilling() { }
+        public void GetFilling()
+        {
+            Console.WriteLine("Chocolate candy {0} contains filling {1}", CandyName, CandyFilling);
+        }
     }
 }

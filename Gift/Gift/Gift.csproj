@@ -47,7 +47,7 @@
     <Compile Include="Classes\Lollipop.cs" />
     <Compile Include="Classes\ChocolateCandy.cs" />
     <Compile Include="Classes\Gift.cs" />
-    <Compile Include="Interfaces\ICandyFilling.cs" />
+    <Compile Include="Interfaces\ICandyStuffing.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\AbstractCandy.cs" />
