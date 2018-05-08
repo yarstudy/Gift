@@ -10,7 +10,7 @@ namespace Gift
     {
         static void Main(string[] args)
         {                                              //Create a gift
-            Gift gift = new Gift("New Gift");
+            Gift gift = new Gift("Not Ideal Gift");
             gift.Add(new ChewyCandy("Meller", 90, 30, "Chocolate"));
             gift.Add(new Lollipop("Duchess", 40, 30));
             gift.Add(new ChocolateCandy("Cherry in cognac", 115, 105, "Cognac"));
