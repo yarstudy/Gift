@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Gift
 {
-
-
     public class Lollipop : AbstractCandy
     {
+        //Constructor
         public Lollipop(string candyName, int candyWeight, int candySugar)
             : base(candyName, candyWeight, candySugar)
         {
