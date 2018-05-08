@@ -8,7 +8,7 @@ namespace Gift
 {
     interface ICandyFilling
     {
-        string CandyFilling { get; set; }
+        string CandyFilling { get;}
         void GetFilling();
     }
 }

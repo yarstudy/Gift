@@ -10,16 +10,16 @@ namespace Gift
     {
         static void Main(string[] args)
         {
-            Gift gift = new Gift();
+            Gift gift = new Gift("New Gift");
             gift.Add(new ChewyCandy("Meller", 90, 30, "Chocolate"));
             gift.Add(new Lollipop("Duchess", 40, 30));
             gift.Add(new ChocolateCandy("Cherry in cognac", 115, 105, "Cognac"));
-            
+
             gift.ShowGift();
             Console.WriteLine();
             gift.GiftWeight(gift);
             Console.WriteLine();
-            gift.SortGift();
+            gift.SortByWeight();
             Console.WriteLine();
             gift.ChooseCandiesBySugarContent(25, 100);
             Console.ReadKey();

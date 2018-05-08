@@ -10,12 +10,9 @@ namespace Gift
 
     public class Lollipop : AbstractCandy
     {
-
         public Lollipop(string candyName, int candyWeight, int candySugar)
             : base(candyName, candyWeight, candySugar)
         {
-
         }
-
     }
 }

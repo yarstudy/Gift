@@ -18,5 +18,10 @@ namespace Gift
             CandyWeight = candyWeight;
             CandySugar = candySugar;
         }
+
+        public virtual void CandyInfo()
+        {
+            Console.WriteLine("Candy name: {0}, Weight: {1} gram, Sugar: {2} gram\n", CandyName, CandyWeight, CandySugar);
+        }
     }
 }
