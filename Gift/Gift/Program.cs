@@ -23,8 +23,8 @@ namespace Gift
             Console.WriteLine("======================");
             gift.ChooseCandiesBySugarContent(25, 100); //Choose candy with a certain sugar content
             Console.WriteLine("======================");
-            gift.ShowGift();
-            Console.ReadKey();                         //Once again show the structure of the gift
+            gift.ShowGift();                           //Once again show the structure of the gift
+            Console.ReadKey();                         
         }
     }
 }
