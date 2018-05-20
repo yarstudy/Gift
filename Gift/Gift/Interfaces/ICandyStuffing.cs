@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Gift
 {
-    interface ICandyStuffing
+    interface ICandyFilling //Interface to Filling
     {
-        string CandyStuffing { get; set; }
-        void GetStuffing();
+        string CandyFilling { get;}
+        void GetFilling();
     }
 }

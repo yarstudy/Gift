@@ -7,16 +7,24 @@ using System.Threading.Tasks;
 
 namespace Gift
 {
-    public abstract class AbstractCandy
-    {
-        public string Name { get; private set; }
-        public int Weight { get; private set; }
-        public int Sugar { get; private set; }
-        public AbstractCandy(string candyName, int candyWeight, int candySugar)
+    public abstract class AbstractCandy //base class for all candies
+    {   
+        //Properties
+        public string CandyName { get; protected set; }
+        public int CandyWeight { get; protected set; }
+        public int CandySugar { get; protected set; }
+
+        //Constructor
+        public AbstractCandy(string candyName, int candyWeight, int candySugar) 
         {
-            Name = candyName;
-            Weight = candyWeight;
-            Sugar = candySugar;
+            CandyName = candyName;
+            CandyWeight = candyWeight;
+            CandySugar = candySugar;
+        }
+
+        public virtual void CandyInfo() //Method for demonstrating candies
+        {
+            Console.WriteLine("Candy name: {0}, Weight: {1} gram, Sugar: {2} gram\n", CandyName, CandyWeight, CandySugar);
         }
     }
 }
