@@ -9,15 +9,15 @@ namespace Gift
 {
 
 
-    public class ChewyCandy : AbstractCandy, ICandyFilling
+    public class ChewyCandy : AbstractCandy, IFilling
     {
-        public string candyFilling;
-        public string CandyFilling { get; set; }
+        public string filling;
+        public string Filling { get; set; }
 
-        public ChewyCandy(string candyName, int candyWeight, int candySugar, string candyFilling)
-            : base(candyName, candyWeight, candySugar)
+        public ChewyCandy(string name, int weight, int sugar, string filling)
+            : base(name, weight, sugar)
         {
-            CandyStuffing = candyStuffing;
+            Filling = filling;
         }
         public void GetFilling() { }
 

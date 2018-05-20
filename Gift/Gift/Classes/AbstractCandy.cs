@@ -10,21 +10,21 @@ namespace Gift
     public abstract class AbstractCandy //base class for all candies
     {   
         //Properties
-        public string CandyName { get; protected set; }
-        public int CandyWeight { get; protected set; }
-        public int CandySugar { get; protected set; }
+        public string Name { get; protected set; }
+        public int Weight { get; protected set; }
+        public int Sugar { get; protected set; }
 
         //Constructor
-        public AbstractCandy(string candyName, int candyWeight, int candySugar) 
+        public AbstractCandy(string name, int weight, int sugar) 
         {
-            CandyName = candyName;
-            CandyWeight = candyWeight;
-            CandySugar = candySugar;
+            Name = name;
+            Weight = weight;
+            Sugar = sugar;
         }
 
-        public virtual void CandyInfo() //Method for demonstrating candies
+        public virtual void Info() //Method for demonstrating candies
         {
-            Console.WriteLine("Candy name: {0}, Weight: {1} gram, Sugar: {2} gram\n", CandyName, CandyWeight, CandySugar);
+            Console.WriteLine("Candy name: {0}, Weight: {1} gram, Sugar: {2} gram\n", Name, Weight, Sugar);
         }
     }
 }

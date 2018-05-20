@@ -6,23 +6,23 @@ using System.Threading.Tasks;
 
 namespace Gift
 {
-    public class ChocolateCandy : AbstractCandy, ICandyFilling
+    public class ChocolateCandy : AbstractCandy, IFilling
     {
-        public string CandyFilling { get; private set; } //Property
+        public string Filling { get; private set; } //Property
 
         //Constructor
-        public ChocolateCandy(string candyName, int candyWeight, int candySugar, string candyFilling)
-            : base(candyName, candyWeight, candySugar)
+        public ChocolateCandy(string name, int weight, int sugar, string filling)
+            : base(name, weight, sugar)
         {
-            CandyFilling = candyFilling;
+            Filling = filling;
         }
         public void GetFilling() //Show filling
         {
-            Console.WriteLine("Chocolate candy {0} contains filling {1}", CandyName, CandyFilling);
+            Console.WriteLine("Chocolate candy {0} contains filling {1}", Name, Filling);
         }
-        public override void CandyInfo() //Overrided basic method
+        public override void Info() //Overrided basic method
         {
-            Console.WriteLine("Chocolate candy: {0}, Weight: {1} gram, Sugar: {2} gram, Filling: {3}\n", CandyName, CandyWeight, CandySugar, CandyFilling);
+            Console.WriteLine("Chocolate candy: {0}, Weight: {1} gram, Sugar: {2} gram, Filling: {3}\n", Name, Weight, Sugar, Filling);
         }
     }
 }

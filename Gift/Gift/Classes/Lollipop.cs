@@ -9,8 +9,8 @@ namespace Gift
     public class Lollipop : AbstractCandy
     {
         //Constructor
-        public Lollipop(string candyName, int candyWeight, int candySugar)
-            : base(candyName, candyWeight, candySugar)
+        public Lollipop(string name, int weight, int sugar)
+            : base(name, weight, sugar)
         {
         }
     }
